@@ -3,15 +3,15 @@
 #include "simple.h"
 #include "sorting.h"
 
-void Read(int &n, int matrix[3][3]) {
-    std::cin >> n;
-    for (int i = 0; i < n; i++)
-        for (int j = 0; j < n; j++)
+void Read(int matrix[3][3]) {
+    for (int i = 0; i < SIZE; i++)
+        for (int j = 0; j < SIZE; j++)
             std::cin >> matrix[i][j];
 }
-bool isPrime(int n, int matrix[3][3]) {
-    for (int i = 0; i < n; i++)
-        for (int j = 0; j < n; j++)
+
+bool isPrime(int matrix[SIZE][SIZE]) {
+    for (int i = 0; i < SIZE; i++)
+        for (int j = 0; j < SIZE; j++)
             if (as::simple(matrix[i][j]))
                 return true;
             else if (matrix[i][j] == 0)
@@ -19,20 +19,21 @@ bool isPrime(int n, int matrix[3][3]) {
     return false;
 }
 
-void Write(int n, int matrix[3][3]) {
-    std::cout << n << std::endl;
-    for (int i = 0; i < n; i++)
-        for (int j = 0; j < n; j++)
-            std::cout << matrix[i][j] << std::endl;
+void Write(int matrix[SIZE][SIZE]) {
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE; j++) {
+            std::cout << matrix[i][j] << '\t';
+        }
+        std::cout << std::endl;
+    }
 }
 
 int main() {
-    int n;
-    int matrix[3][3];
-    Read(n, matrix);
-    if (isPrime(n, matrix))
+    int matrix[SIZE][SIZE];
+    Read(matrix);
+    if (isPrime(matrix))
         as::sorting(matrix);
-    Write(n, matrix);
-    
+    Write(matrix);
+
     return 0;
 }
