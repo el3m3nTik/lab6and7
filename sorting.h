@@ -1,9 +1,11 @@
 #pragma once
+namespace as 
+{
+	#define SIZE 3
 
-#define SIZE 3
+	#ifdef SIZE
 
-#ifdef SIZE
+	void sorting(int matrix[SIZE][SIZE]);
 
-void sorting(int matrix[SIZE][SIZE]);
-
-#endif
+	#endif
+}

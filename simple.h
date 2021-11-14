@@ -1,3 +1,6 @@
 #pragma once
 
-int simple(int n);
+namespace as
+{
+	int simple(int n);
+}
