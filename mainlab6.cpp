@@ -3,6 +3,22 @@
 #include "simple.h"
 #include "sorting.h"
 
+void Read(int matrix[SIZE][SIZE]);
+
+bool isPrime(int matrix[SIZE][SIZE]);
+
+void Write(int matrix[SIZE][SIZE]);
+
+int main() {
+    int matrix[SIZE][SIZE];
+    Read(matrix);
+    if (isPrime(matrix))
+        as::sorting(matrix);
+    Write(matrix);
+
+    return 0;
+}
+
 void Read(int matrix[SIZE][SIZE]) {
     for (int i = 0; i < SIZE; i++)
         for (int j = 0; j < SIZE; j++)
@@ -26,14 +42,4 @@ void Write(int matrix[SIZE][SIZE]) {
         }
         std::cout << std::endl;
     }
-}
-
-int main() {
-    int matrix[SIZE][SIZE];
-    Read(matrix);
-    if (isPrime(matrix))
-        as::sorting(matrix);
-    Write(matrix);
-
-    return 0;
 }
