@@ -3,7 +3,7 @@
 #include "simple.h"
 #include "sorting.h"
 
-void Read(int matrix[3][3]) {
+void Read(int matrix[SIZE][SIZE]) {
     for (int i = 0; i < SIZE; i++)
         for (int j = 0; j < SIZE; j++)
             std::cin >> matrix[i][j];
