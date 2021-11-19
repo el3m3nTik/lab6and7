@@ -1,6 +1,6 @@
 #include <iostream>
 #include <algorithm>
-#include "sorting.h"
+#include "sortingRW.h"
 
 namespace as {
     void sorting(int matrix[SIZE][SIZE]) {

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include "simple.h"
-#include "sorting.h"
+#include "sortingRW.h"
 
 int main() {
     int matrix[SIZE][SIZE];

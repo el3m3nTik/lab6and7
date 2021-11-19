@@ -9,5 +9,5 @@ add_executable(lab6and7
         mainlab6.cpp
         simple.cpp
         simple.h
-        sorting.cpp
-        sorting.h)
+        sortingRW.cpp
+        sortingRW.h)
