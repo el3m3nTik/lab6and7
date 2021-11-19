@@ -7,5 +7,9 @@ namespace as
 
 	void sorting(int matrix[SIZE][SIZE]);
 
+	void Read(int matrix[SIZE][SIZE]);
+
+	void Write(int matrix[SIZE][SIZE]);
+
 	#endif
 }

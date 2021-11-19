@@ -11,6 +11,7 @@ namespace as {
                 temp[s] = matrix[i][j];
 
         sort(temp, temp + s, std::greater<>());
+
         s = 0;
         for (int i = 0; i < SIZE; i++)
             for (int j = 0; j < SIZE; j++, s++)
